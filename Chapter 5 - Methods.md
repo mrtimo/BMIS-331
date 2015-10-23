@@ -87,7 +87,7 @@ Two main types of methods: (1) instance methods and (2) class methods
 - The formal parameters of a method are treated as local variables within that method.
 
 **Example:**
-
+<script src="https://gist.github.com/mrtimo/53a5f3e2cabd70c6b253.js"></script>
 ```
 public class Method1
 {
