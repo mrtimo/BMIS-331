@@ -5,7 +5,7 @@
 - Methods Sequence of instructions with a name
 - You've already encountered and used methods charAt() or equalsIgnoreCase()
 - You _call_ a method in order to execute its instructions
-- Book example: `java double z = Math.pow(2, 3);`
+- Book example: ```java double z = Math.pow(2, 3);```
 - When main calls the Math.pow method, main is temporarily suspended.
 - The instructions of the Math.pow method execute and compute the result.
 - The Math.pow method returns its result back to main and main resumes execution.
