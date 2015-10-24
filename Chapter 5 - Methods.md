@@ -88,7 +88,7 @@ Two main types of methods: (1) instance methods and (2) class methods
 
 **Example:**
 <script src="https://gist.github.com/mrtimo/53a5f3e2cabd70c6b253.js"></script>
-```
+```java
 public class Method1
 {
 	public static void main(String [] args)
