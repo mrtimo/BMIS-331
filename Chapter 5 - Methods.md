@@ -3,46 +3,57 @@
 **5.1        Methods as Black Boxes**
 
 - Methods Sequence of instructions with a name
-- You've already encountered and used methods charAt() or equalsIgnoreCase()
+- You've already encountered and used methods **charAt() or equalsIgnoreCase() or Math.pow() or String.substring()
 - You _call_ a method in order to execute its instructions
-- Book example: ```java double z = Math.pow(2, 3);```
-- When main calls the Math.pow method, main is temporarily suspended.
+- Book example: `double z = Math.pow(2, 3);`
+- When main calls the Math.pow method, main (the main method) is temporarily suspended.
 - The instructions of the Math.pow method execute and compute the result.
-- The Math.pow method returns its result back to main and main resumes execution.
-- Methods can receive multiple parameters, but they return only one value.
-- Also possible to have methods with no parametersMath.random()
+- The Math.pow method **returns its result back to main** and main resumes execution.
+- Methods can receive _multiple_ parameters, but they return _only one_ value.
+ - A method with one parameter `Math.sqrt(2)` and two parameters `Math.pow(2,3)`
+ - Also possible to have methods with no parameters e.g. `Math.random()`
 - Parameter values are supplied when a method is called.
-- The return value is the result that the method computes
-- You don't need to know how the method is implemented
-- You just need to know the specification of the method
+- The _return_ value is the result that the method computes
 - Methods should appear as "black boxes"
+ + You don't need to know how the method is implemented
+ - You just need to know the specification of the method
+
 
 **5.2        Implementing Methods**
 
 - When writing a method, you need to:
-  - Pick a name for the method (cubeVolume)
-  - Give a name and type for each parameter variable (double sideLength)
-  - Specify a type for the return value (double)
-  - Add the public static modifiers
-  - Specify the body of the method
-  - Contains the variable declarations and statements that are executed when the method is called.
+  - Pick a name for the method `cubeVolume`
+  - Give a name and type for each parameter variable `double sideLength`
+  - Specify a type for the return value `double`
+  - Add the `public static` modifiers
+  - Specify the body of the method the code inside the method
+   - Contains the variable declarations and statements that are executed when the method is called.
 
 - The return statement gives the method's result to the caller
 - The body of a method is enclosed in braces
 - When the method is called with different parameter values, the method returns different results
-- Put the methods into a test program
+- Put the methods into a test program (test out the methods)
 
 **Syntax 5.1        Static Method Declaration**
 
-- public static returnType methodName(parameterType parameterName, …)
+- `public static returnType methodName(parameterType parameterName, …)`
 - Method body executed when method called
-- return  statement exits method and returns result
+- `return`  statement exits method and returns result
 
 **Programming Tip 5.1        Method Comments**
 
 - Always comment method behavior
 - Method comments explain the purpose of the method, the meaning of the parameters and return value, as well as any special requirements
 - Comments enclosed in /\*\* and \*/ delimiters.
+- In convention for comments is below. Notice how the comment describes the parameters required, and what will be returned.
+```java
+/**
+* An example of a method - replace this comment with your own
+*
+* @param  y   a sample parameter for a method
+* @return     the sum of x and y
+*/
+```
 
 **5.3       **  **Parameter Passing**
 
@@ -87,7 +98,7 @@ Two main types of methods: (1) instance methods and (2) class methods
 - The formal parameters of a method are treated as local variables within that method.
 
 **Example:**
-<script src="https://gist.github.com/mrtimo/53a5f3e2cabd70c6b253.js"></script>
+
 ```java
 public class Method1
 {
@@ -112,9 +123,9 @@ public class Method1
 
 - All methods generally have a return value. If the return value is of type void, nothing is returned and there is no return statement within the function. In this example, an int is returned.
 
-- A method is executed when it is called. Method call = showMin(a, b);
+- A method is executed when it is called. Method call = `showMin(a, b);`
 
-- The parameters a and b are often referred to as actual parameters. The values of these are passed to the method showMin();
+- The parameters a and b are often referred to as actual parameters. The values of these are passed to the method `showMin();`
 
 - The method definition has parameters called x and y. These are often referred to as formal parameters. Formal parameters are variables local to the method. These parameters accept the values of a and b.
 
@@ -142,7 +153,7 @@ public class Method1
 - Sometimes, you need to carry out a sequence of instructions that does not yield a value.
 - Often, this type of method doesn't compute any value, but performs some actions and then returns to the caller.
 - If you want to return from a void method before reaching the end, you use a return statement without a value.
-- For example: return; //Return immediately
+- For example: `return`; //Return immediately
 
 **5.6        Problem Solving: Reusable Methods**
 
@@ -231,5 +242,5 @@ Two key requirements to make sure that the recursion is successful:
   - getTeenName
   - getTensName
 - Run once to see the result
-- Set a halt opposite the System.out.println
+- Set a halt opposite the `System.out.println`
 - Enter 525 in response to the prompt and step through the code
